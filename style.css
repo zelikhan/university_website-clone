@@ -270,7 +270,13 @@ h3{
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
   }
+
+.departments-col:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
   
   .departments-col img {
     width: 100%;
@@ -282,3 +288,5 @@ h3{
     margin-top: 5px;
     font-size: 18px;
   }
+  
+ 
