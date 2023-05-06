@@ -102,6 +102,8 @@ nav-img{
 
 
 /*---course-----*/
+
+
 .course{
     width: 80%;
     margin: auto;
@@ -149,3 +151,134 @@ h3{
     box-shadow: 0 0 40px 0px rgba(125, 230, 240, 0.723);
 }
 
+
+/*---course-----*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    height: 670px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+    
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(81, 226, 255, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*---facilities-----*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+    
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/* Section styles */
+.departments {
+    background-color: #ffffff;
+    padding: 2px;
+    padding-top:100px ;
+  }
+  
+  .departments h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;        
+  }
+  
+  .departments .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Department column styles */
+  .departments-col {
+    width: 250px;
+    margin: 15px;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .departments-col img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .departments-col h3 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
