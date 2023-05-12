@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Business Administration - University</title>
+    <link rel="stylesheet" type="text/css" href="AStyle.css">
+  </head>
+  <body>
+    <h1 style="text-align:center;">Department of  Business Administration</h1>
+    <main class="content">
+      <div style="width: 300px; height: 300px; ">
+        <h3>Department of  Business Administration </h3>
+        <p class="clickable"onclick='changeI("Intro")'  style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: lightgrey;">Introduction </p>
+        <p type="text" onclick='changeT("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: lightgrey;">Message from Chair Department </p>
+
+        <p type="text" onclick='changeO("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: lightgrey;">Programs Offered </p>
+
+        <p type="text" onclick='changeD("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: lightgrey;"> Scope</p>
+
+       
+      </div>
+
+      <div id="Intro">
+        <h2 id="headingh">Introduction</h2>
+       <p style="width:auto">The Air University Kamra, Department of Business Administration (DBA)offers students a variety of specialization in Aviation Management, Finance, Marketing, Project Management and Human Resource Management.The curricula of the degree programs are fully aligned with the requirements of the accreditation bodies to comprise state-of-the-art courses that will prepare students for future challenges in computing and related fields. The department strives to maintain high standards through quality in teaching, learning, and research, with an emphasis on theoretical foundations, practical skills and cutting-edge applications of the subjects. To enhance and groom the soft skills of students, co-curricular and extra-curricular activities are planned and organized throughout the degree program. Our programs prepare students with a foundation in the major functional areas within business, such as accounting, economics, entrepreneurship, finance, information systems, international business, management, marketing and small business as well as Aviation Industry.</p>
+  
+      </div>
+    </main>
+    <div style="text-align: center; width: auto;">
+      <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: darkcyan;">Department Photos</h2>
+      <div style="max-width: 1200px; background-color: lightgrey; padding: 15px; height: auto; margin-left: 110px ; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; border-radius: 10px; margin-bottom: 20px; ">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023  Business Administration Department - University. All rights reserved.</p>
+    </footer>
+    <script>
+      function changeT(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Message from Chair Department';
+        paragraph.innerHTML = '<span style="color:black;">The department of Business Administration combines business education with a strong sense of leadership skills. Our faculty is excellent facilitator, who impart the cutting-edge education that marks a meaningful impact on industry and society in almost all areas of human endeavors. <br> Highly qualified and committed faculty with impressive academic and research profiles is out core strength. Commitment of our faculty members towards quality engineering research and personal growth of our students makes our program unique.<br>  Graduates who are ambitious to realize their passion through business education qutes to join us. We develop our students in capacity building of almost all sorts of entrepreneurial business ideas. We support business ideas, competition and invite different venture capitalists in our business incubation center to promote a healthy business climate for the budding entrepreneurs. Let me assure you that this is a special seat of higher learners. <br>Let us know how we can make your ambitions come to maturity as an Air University Kamra Campus. students! I’d love to hear from you and would try my level best to incorporate your feedback in the curriculum to make learning happen in the most desirable fashion. <br> <br><span style="font-weight:bold;color:black;">Regards Dr. Waqas Bin Khidmat</span>';
+      }
+    </script>
+
+ <script>
+      function changeI(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Introduction';
+        paragraph.textContent = ' The Air University Kamra, Department of Business Administration (DBA)offers students a variety of specialization in Aviation Management, Finance, Marketing, Project Management and Human Resource Management.The curricula of the degree programs are fully aligned with the requirements of the accreditation bodies to comprise state-of-the-art courses that will prepare students for future challenges in computing and related fields. The department strives to maintain high standards through quality in teaching, learning, and research, with an emphasis on theoretical foundations, practical skills and cutting-edge applications of the subjects. To enhance and groom the soft skills of students, co-curricular and extra-curricular activities are planned and organized throughout the degree program. Our programs prepare students with a foundation in the major functional areas within business, such as accounting, economics, entrepreneurship, finance, information systems, international business, management, marketing and small business as well as Aviation Industry.';
+      }
+    </script>
+
+     <script>
+      function changeO(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        const paragraph1 = divToChange.querySelector('p5');
+        const paragraphh2 = divToChange.querySelector('p3');
+        const paragraph3 = divToChange.querySelector('p4');
+        heading.textContent = 'Programs Offered';
+       paragraph.innerHTML = ' <span style="font-weight:bold;color:black;">Bachelor of Business Administration (BBA-Honors)</span><br> BBA (Hons) or Bachelor of Business Administration Honors is an Under-Graduate Business management academic degree course. Business Administration is the performance or management of business operations and thus the making or implementation of a major decision. Administration defines as the universal process of organizing people and resources efficiently to direct activities toward common goals and objectives. <br> <br> <span style="font-weight:bold;color:black;">Bachelor of Science Aviation Management (BS AviMgt).</span> <br>Aviation management course focuses on marketing management, aviation law, airline management, airline and airport management etc. The course aims to produce aviation management professionals who have stellar communication skills, interpersonal skills, excellent knowledge about air transport, airport operations, cabin crew training to ground staff and ticket management.Aviation management course imparts knowledge on the airport, business, airlines, and every aspect of the aviation industry. <br>Aerodynamics, aviation safety, aircraft systems, meteorology, airline management, and international aviation are other topics in aviation management. The course also prepares students for a variety of roles in the aviation industry. Business and managerial aspects of the aviation industry are primarily focused on this course.  ';
+
+    
+      }
+    </script>
+
+    <script>
+      function changeD(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+    
+        heading.textContent = 'Scope';
+       paragraph.innerHTML = 'Degrees of Management Sciences have a multidisciplinary atmosphere which focuses on innovative technologies to efficiently run different businesses. It uses a combination of analytical models and behavioral sciences to address societies’ most complex problems. <br> The scope of management science had been growing ever since the business world is expanding. All organizations and firms in the country and worldwide need a business manager or finance manager to manage the growth of their business in the most excellent, professional and ethical way. The best choice of every business firm for the business manager is Air University for its exceptional policies of teaching and offering the outside world the candidate who have all the knowledge to lead the business firms and make it out stand all the others.';
+
+    
+      }
+    </script>
+
+
+
+  </body>
+</html>

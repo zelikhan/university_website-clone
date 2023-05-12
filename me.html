@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Mechanical Engineering - University</title>
+    <link rel="stylesheet" type="text/css" href="AStyle.css">
+  </head>
+  <body>
+    <h1 style="text-align:center;">Department of Mechanical Engineering</h1>
+    <main class="content">
+      <div style="width: 300px; height: 300px; ">
+        <h3>Department of Mechanical Engineering </h3>
+        <p class="clickable"onclick='changeI("Intro")'  style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Introduction </p>
+        <p type="text" onclick='changeT("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Message from Chair Department </p>
+
+        <p type="text" onclick='changeO("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Programs Offered </p>
+
+        <p type="text" onclick='changeD("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);"> Mission</p>
+
+       
+      </div>
+
+      <div id="Intro">
+        <h2 id="headingh">Introduction</h2>
+       <p style="width:auto">The Aerospace and Aviation campus Kamra of Air University Islamabad was created in 2019 and offers two graduate Engineering programs, namely Aerospace engineering and Avionics engineering. In addition, the campus provides three non-engineering undergraduate programs in Business administration, Computer science, and Cybersecurity. In 2020, two engineering undergraduate programs, namely BE. Mechanical Engineering and BE. Electrical engineering, were introduced. At present, the department has a group of highly qualified and experienced faculty members who possess a notable academic background and are actively involved in research.To meet the demands of the contemporary industry, the Bachelor in Mechanical Engineering program has been designed to include theory and laboratory courses covering four key areas: Solid Mechanics and Design, Thermofluids, Manufacturing, and Dynamics & Control. Additionally, almost 30% of the courses encompass Math, Physics, Humanities, Social Sciences, and Management domains. The program is spread over eight semesters (four years) and requires completion of 136 credit hours, including theory and laboratory courses, as well as project/research work.The department of mechanical engineering has PEC level-II accreditation for the Mechanical Engineering degree program. As a result, the BEME program continues to be one of the most popular engineering programs offered by Air University. The Mechanical Engineering Master of Science program offers two specializations: Design Engineering and Fluid Power Engineering. To obtain the MS degree, students must successfully complete 25 credit hours of coursework and 6 credit hours of research work. Both MS and PhD research work is aimed at producing outcomes that meet the criteria for publication in prestigious international journals. </p>
+  
+      </div>
+    </main>
+    <div style="text-align: center; width: auto;">
+      <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: darkcyan;">Department Photos</h2>
+      <div style="max-width: 1200px; background-color: lightgrey; padding: 15px; height: auto; margin-left: 110px ; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; border-radius: 10px; margin-bottom: 20px; ">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023  Mechanical Engineering Department - University. All rights reserved.</p>
+    </footer>
+    <script>
+      function changeT(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Message from Chair Department';
+        paragraph.innerHTML = '<span style="color:black;">Aerospace and Aviation Campus Kamra, Air University is set out to sculpture future leaders through ingenious learning and high-quality education. It is indeed a privilege to be a part Department of Mechanical Engineering (DME) at Air University, Karma.<br> DME has a modern, attractive, and innovative curriculum designed by experts and practitioner of engineering profession having a vast experience of local and international academics and industrial organizations. Drawing on from disciplines such as dynamics, thermo-fluid, energy systems, and manufacturing, the curriculum also reflects the latest advances in the field of aerospace and aviation using the knowledge of computational fluid dynamics, computer-aided design and additive manufacturing.<br> Highly qualified and committed faculty with impressive academic and research profiles is out core strength. Commitment of our faculty members towards quality engineering research and personal growth of our students makes our program unique.<br>  In the form of internships, short trainings, and industrial tours, students at DME will be privileged with the opportunity to apply their theoretical and computational skills in practical environment with the collaboration of well-established aerospace industry of Pakistan (Pakistan Aeronautical Complex, Kamra), industries associated with CPEC and local industries. <br>DME has highly experienced and qualified faculty members graduated from world renowned universities who are collaborating with industries in cutting-edge research programs. Innovative, interactive teaching methods and student mentoring are the unique features of our department. We pride ourselves in providing our students with productive, dynamic, and joyful experience at all levels of the program of studies.<br>Our mission is to transform students into rational thinkers, keen observers, competent engineers, law abiding citizens and spiritually enlightened individuals. On behalf of the Department of Mechanical Engineering team, I would like to welcome you all to a challenging, inspiring and rewarding experience. <br> <br><span style="font-weight:bold;color:black;">Regards Dr. Zabd Ur Rehman</span>';
+      }
+    </script>
+
+ <script>
+      function changeI(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Introduction';
+        paragraph.textContent = 'The Aerospace and Aviation campus Kamra of Air University Islamabad was created in 2019 and offers two graduate Engineering programs, namely Aerospace engineering and Avionics engineering. In addition, the campus provides three non-engineering undergraduate programs in Business administration, Computer science, and Cybersecurity. In 2020, two engineering undergraduate programs, namely BE. Mechanical Engineering and BE. Electrical engineering, were introduced. At present, the department has a group of highly qualified and experienced faculty members who possess a notable academic background and are actively involved in research.To meet the demands of the contemporary industry, the Bachelor in Mechanical Engineering program has been designed to include theory and laboratory courses covering four key areas: Solid Mechanics and Design, Thermofluids, Manufacturing, and Dynamics & Control. Additionally, almost 30% of the courses encompass Math, Physics, Humanities, Social Sciences, and Management domains. The program is spread over eight semesters (four years) and requires completion of 136 credit hours, including theory and laboratory courses, as well as project/research work.The department of mechanical engineering has PEC level-II accreditation for the Mechanical Engineering degree program. As a result, the BEME program continues to be one of the most popular engineering programs offered by Air University. The Mechanical Engineering Master of Science program offers two specializations: Design Engineering and Fluid Power Engineering. To obtain the MS degree, students must successfully complete 25 credit hours of coursework and 6 credit hours of research work. Both MS and PhD research work is aimed at producing outcomes that meet the criteria for publication in prestigious international journals.';
+      }
+    </script>
+
+     <script>
+      function changeO(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        const paragraph1 = divToChange.querySelector('p5');
+        const paragraphh2 = divToChange.querySelector('p3');
+        const paragraph3 = divToChange.querySelector('p4');
+        heading.textContent = 'Programs Offered';
+       paragraph.innerHTML = ' <span style="font-weight:bold;color:black;">Bachelor of Mechanical Engineering</span><br> Applicants must have passed: Intermediate (Part I and II) examination with Physics, Chemistry and Mathematics from any Board of Intermediate and Secondary Education in Pakistan. Applicant must have scored 60% or more marks.<br>The candidates who qualify the Admission Test will only be offered admission as per position in merit list. <br> <br> <span style="font-weight:bold;color:black;">Master of Science in Mechanical Engineering</span> <br>BE/BSc (Mechanical, Aerospace, Aeronautical, Mechatronics, Chemical) Fresh graduates are eligible but some relevant industrial experience will help a student gain more from the program. <br> Minimum CGPA 2.50/4.00 or equivalent. <br>AU-GAT(Gen) at least 60% score OR NTS-GAT(Gen) at least 50% score. This must be passed before the date of admission in MS Program. <br> Candidates will appear for an interview for final selection.   <br> ';
+
+    
+      }
+    </script>
+
+    <script>
+      function changeD(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+    
+        heading.textContent = 'Mission';
+       paragraph.innerHTML = 'The Department of Mechanical Engineering aspires to produce well equipped professionals with excellent knowledge of mechanical engineering discipline, professional rectitude and ethical values. The graduates will be capable of providing solution to present and future engineering challenges at national and international levels. <br> <br> <span style="font-weight:bold;color:black;">Education</span>  <br> Our department strives to provide our students with a rigorous and comprehensive education that will equip them with the knowledge, skills, and ethical values they need to become successful and effective engineers. We seek to provide our students with a broad and deep understanding of the fundamentals of mechanical engineering, as well as an appreciation for the latest advances in the field. We aim to inspire our students to pursue lifelong learning and to develop the ability to think critically and creatively. <br> <br><span style="font-weight:bold;color:black;">Research</span>  <br> The Department of Mechanical Engineering is committed to conducting innovative research that advances the state of the art in mechanical engineering. Our research focuses on areas of societal need, such as energy, environment, transportation, and healthcare. We seek to develop innovative and sustainable solutions to complex engineering problems. Our research is conducted in collaboration with industry partners, government agencies, and other universities, to ensure that our work has a real-world impact. <br> <br><span style="font-weight:bold;color:black;">Service</span>  <br> The Department of Mechanical Engineering is dedicated to serving the community through outreach, engagement, and service. We seek to be a valuable resource for industry partners, government agencies, and the community at large, by providing technical expertise, research support, and educational outreach programs. We strive to be active members of professional organizations and to provide leadership in advancing the field of mechanical engineering.<br>  <br><span style="font-weight:bold;color:black;">Values</span>  <br>  At the heart of our mission are the values of excellence, integrity, respect, and inclusivity. We believe that excellence in teaching, research, and service is essential to achieving our mission. We strive to maintain the highest standards of ethical conduct in all our activities. We value diversity and inclusivity in all aspects of our department, and we seek to create an environment where all students, faculty, and staff feel valued and respected.<br> ';
+
+    
+      }
+    </script>
+
+
+
+  </body>
+</html>

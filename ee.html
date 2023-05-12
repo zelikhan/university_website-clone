@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Electrical Engineering - University</title>
+    <link rel="stylesheet" type="text/css" href="AStyle.css">
+  </head>
+  <body>
+    <h1 style="text-align:center;">Department of Electrical Engineering</h1>
+    <main class="content">
+      <div style="width: 300px; height: 300px; ">
+        <h3>Department of Electrical Engineering </h3>
+        <p class="clickable"onclick='changeI("Intro")'  style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:  rgb(82, 220, 204);">Introduction </p>
+        <p type="text" onclick='changeT("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:  rgb(82, 220, 204);">Message from Chair Department </p>
+
+        <p type="text" onclick='changeO("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Programs Offered </p>
+
+        <p type="text" onclick='changeD("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:  rgb(82, 220, 204);"> Mission</p>
+
+       
+      </div>
+
+      <div id="Intro">
+        <h2 id="headingh">Introduction</h2>
+       <p style="width:auto">The Department of Electrical Engineering at Air University Aerospace and Aviation Campus, Karma (AUA&ACK) is in operation since Fall 2020. The department is offering undergraduate and postgraduate programs in the discipline of electrical engineering. At undergraduate level the program offers two streams for specialization, i.e. Power and Electronics. At postgraduate level, the specialization streams include, Power Systems, Control Systems, Communication & Signal Processing, and Electronics & Embedded Systems. The curriculum offered has emphasis on both the theoretical as well as the practical knowledge of the latest trends in academia and industry and is targeted to equip students with the requisite know-how for solving real-life problems and coping with the challenges of the professional world ahead. The department has state of the art laboratories which are equipped with the latest training aids in order to enhance the practical learning experience of the students. The laboratories include Electronic Systems, Digital Electronics, Embedded Systems, Power Electronics, Electrical Machines, Power Systems, RF and Optical Communication, Digital Signal Processing, Antenna and Microwave, Instrumentation and Measurement, and Control Systems. Students also have access to computer laboratories with latest computer hardware and software for computer based courses. For research purposes, a dedicated high performance computing lab has been established for postgraduate students, with access to IEEE digital library and other digital libraries.</p>
+  
+      </div>
+    </main>
+    <div style="text-align: center; width: auto;">
+      <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: darkcyan;">Department Photos</h2>
+      <div style="max-width: 1200px; background-color: lightgrey; padding: 15px; height: auto; margin-left: 110px ; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; border-radius: 10px; margin-bottom: 20px; ">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023  Electrical Engineering Department - University. All rights reserved.</p>
+    </footer>
+    <script>
+      function changeT(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Message from Chair Department';
+        paragraph.innerHTML = '<span style="color:black;">TIt is my pleasure to cordially welcome you on behalf of the faculty to the Department of Electrical Engineering at the Air University Aerospace and Aviation Campus, Kamra. <br> Highly qualified and committed faculty with impressive academic and research profiles is out core strength. Commitment of our faculty members towards quality engineering research and personal growth of our students makes our program unique.<br> Highly qualified and committed faculty with impressive academic and research profiles is out core strength. Commitment of our faculty members towards quality engineering research and personal growth of our students makes our program unique.<br>  To expose our students with latest trends in the industry, we collaborate with industrial partners through joint research projects and exchange visits of students and faculty. It results in an opportunity for our students to apply what they learn in the classroom. Pakistan Aeronautical Complex (PAC) kamra is the primary industrial partner of the Aerospace and Aviation Campus offering internships to the undergraduate students with exposure to state or the art trends in aerospace and avionics industry. <br>Apart from professional knowledge and technical know-how, special focus is paid to develop the soft skills of our student’s. They are trained to be technically competent, interdisciplinary, innovative, and entrepreneurial. They are taught to be effective communicators, life-long learners, problem solvers, and leaders with a global vision. Throughout the academic year, we organize seminars, hands on training workshops & internships, industrial tours.<br>I am excited to welcome you into the electrical engineering community and looking forward to see your transformation as an engineering leader equipped with modern engineering trends to address complex challenges being faced by electrical engineering world. <br> <br><span style="font-weight:bold;color:black;">Regards Dr. Husan Ali</span>';
+      }
+    </script>
+
+ <script>
+      function changeI(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Introduction';
+        paragraph.textContent = 'The Department of Electrical Engineering at Air University Aerospace and Aviation Campus, Karma (AUA&ACK) is in operation since Fall 2020. The department is offering undergraduate and postgraduate programs in the discipline of electrical engineering. At undergraduate level the program offers two streams for specialization, i.e. Power and Electronics. At postgraduate level, the specialization streams include, Power Systems, Control Systems, Communication & Signal Processing, and Electronics & Embedded Systems. The curriculum offered has emphasis on both the theoretical as well as the practical knowledge of the latest trends in academia and industry and is targeted to equip students with the requisite know-how for solving real-life problems and coping with the challenges of the professional world ahead. The department has state of the art laboratories which are equipped with the latest training aids in order to enhance the practical learning experience of the students. The laboratories include Electronic Systems, Digital Electronics, Embedded Systems, Power Electronics, Electrical Machines, Power Systems, RF and Optical Communication, Digital Signal Processing, Antenna and Microwave, Instrumentation and Measurement, and Control Systems. Students also have access to computer laboratories with latest computer hardware and software for computer based courses. For research purposes, a dedicated high performance computing lab has been established for postgraduate students, with access to IEEE digital library and other digital libraries.';
+      }
+    </script>
+
+     <script>
+      function changeO(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        const paragraph1 = divToChange.querySelector('p5');
+        const paragraphh2 = divToChange.querySelector('p3');
+        const paragraph3 = divToChange.querySelector('p4');
+        heading.textContent = 'Programs Offered';
+       paragraph.innerHTML = ' <span style="font-weight:bold;color:black;">Bachelor of Electrical Engineering</span><br> Applicants must have passed: Intermediate (Part I and II) examination with Physics, Chemistry and Mathematics from any Board of Intermediate and Secondary Education in Pakistan. Applicant must have scored 60% or more marks.<br>The candidates who qualify the Admission Test will only be offered admission as per position in merit list. <br> <br> <span style="font-weight:bold;color:black;">Master of Science in Electrical Engineering (Evening).</span> <br>B.E/B.Sc Engineering (Avionics/ Computer/ Electrical /Electronics/ Mechatronics /Telecom). Fresh graduates are eligible but some relevant industrial experience will help a student gain more from the program. <br> Minimum CGPA 2.00/4.00 or equivalent. <br>AU-GAT(Gen) at least 60% score OR NTS-GAT(Gen) at least 50% score. This must be passed before the date of admission in MS Program. <br> Candidates will appear for an interview for final selection.   <br> <br> <span style="font-weight:bold;color:black;">PhD Engineering (Evening)</span> <br>Master degree (18years education) in engineering (with at least 24 credit-hours course work plus 6 credit hours thesis) with a CGPA of at least 3.00/4.00 or equivalent.<br>AU-GAT(Sub) at least 70% score or NTS-GAT(Sub) at least 60% score or a GRE Subject Test (at least 60th percentile). This must be passed before the date of admission in PhD Program. <br> Candidates will appear for an interview for final selection. ';
+
+    
+      }
+    </script>
+
+    <script>
+      function changeD(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+    
+        heading.textContent = 'Mission';
+       paragraph.innerHTML = 'The mission of the Electrical Engineering department is to produce graduates with critical thinking, having excellent research potential, engineering knowledge, and professional ethics. our graduates would be technically strong enough to adjust in the contemporary challenging industrial environment';
+
+    
+      }
+    </script>
+
+
+
+  </body>
+</html>

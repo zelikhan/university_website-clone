@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Avionics Engineering - University</title>
+    <link rel="stylesheet" type="text/css" href="AStyle.css">
+  </head>
+  <body>
+    <h1 style="text-align:center;">Department of Avionics Engineering</h1>
+    <main class="content">
+      <div style="width: 300px; height: 200px; ">
+        <h3>Department of Avionics Engineering </h3>
+        <p class="clickable"onclick='changeI("Intro")'  style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:  rgb(82, 220, 204);">Introduction </p>
+        <p type="text" onclick='changeT("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:  rgb(82, 220, 204);">Message from Chair Department </p>
+
+      </div>
+
+      <div id="Intro">
+        <h2 id="headingh">Introduction</h2>
+       <p style="width:auto">The word Avionics is a combination of Aviation and Electronics. In recent years, the aircraft industry has experienced an exponential increase in the application of Digital Communications, Controls and Navigation Systems. On-board computers now control vital flight functions of large aerial vehicles from takeoff to automatically controlled landings while on-board sensors observe physical phenomena as diverse as weather, ground vehicles, crop densities and other aerial targets. The field of Avionics is thus multi-disciplinary and challenging. The Department of Avionics Engineering of Air University Aerospace & Aviation Campus, Kamra offers MS in Avionics Engineering. The program offered provides an opportunity of pursuing a rigorous course of studies reflecting the challenges of today’s high-tech electronics and aviation industry. The students are allowed to select courses from a variety of specializations which are covered in depth and which probe the frontiers of engineering and scientific knowledge. Special-study courses are available to explore emerging technologies and their applications for solving problems. Advanced concepts and applications are emphasized throughout the program and the thesis research. The aim is to provide the required knowledge and substantial depth so that the alumni can continue to pursue lifelong multidisciplinary learning as professional engineers.</p>
+       
+      </div>
+    </main>
+    <div style="text-align: center; width: auto;">
+      <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: darkcyan;">Department Photos</h2>
+      <div style="max-width: 1200px; background-color: lightgrey; padding: 15px; height: auto; margin-left: 110px ; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; border-radius: 10px; margin-bottom: 20px; ">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+        <img src="image1.jpg">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 Avionics Engineering - University. All rights reserved.</p>
+    </footer>
+    <script>
+      function changeT(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Message from Chair Department';
+        paragraph.innerHTML = '<span style="color:black;">On behalf of faculty members and staff, I welcome you to the Department of Avionics Engineering, Aerospace and Aviation Campus, Air University Kamra. <br> The department was established in 2017 in a temporary building inside PAC Kamra. However, a custom-built campus of Air University Kamra has started functioning at Aviation City, Kamra. As a pioneering academic institute of Aviation City, Kamra, we feel pride to be associated closely with the Pakistan Aeronautical Complex (PAC), the hub of the aviation industry in Pakistan. Most of our faculty members are program leads in various technology programs being undertaken at PAC. By virtue of their practical experience in the avionics domain, they are able to blend academic knowledge with invaluable field experience. Academia-industry collaboration is one of the core guiding principles of our Master’s program and we design our scheme-of-studies to foster the state-of-the-art technology development needed by the aviation industry of Pakistan. Our students are provided a unique opportunity to work on actual projects of PAC, thus facilitating their entry into a competitive job market. <br> <span style="font-weight:bold;color:black;">Regards Dr. Qasim Ali </span>';
+      }
+    </script>
+
+ <script>
+      function changeI(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Introduction';
+        paragraph.textContent = ' The word Avionics is a combination of Aviation and Electronics. In recent years, the aircraft industry has experienced an exponential increase in the application of Digital Communications, Controls and Navigation Systems. On-board computers now control vital flight functions of large aerial vehicles from takeoff to automatically controlled landings while on-board sensors observe physical phenomena as diverse as weather, ground vehicles, crop densities and other aerial targets. The field of Avionics is thus multi-disciplinary and challenging. The Department of Avionics Engineering of Air University Aerospace & Aviation Campus, Kamra offers MS in Avionics Engineering. The program offered provides an opportunity of pursuing a rigorous course of studies reflecting the challenges of today’s high-tech electronics and aviation industry. The students are allowed to select courses from a variety of specializations which are covered in depth and which probe the frontiers of engineering and scientific knowledge. Special-study courses are available to explore emerging technologies and their applications for solving problems. Advanced concepts and applications are emphasized throughout the program and the thesis research. The aim is to provide the required knowledge and substantial depth so that the alumni can continue to pursue lifelong multidisciplinary learning as professional engineers..';
+      }
+    </script>
+
+
+
+
+  </body>
+</html>
