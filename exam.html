@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AAUCK ORIC </title>
+    <link rel="stylesheet" type="text/css" href="AStyle.css">
+  </head>
+  <body>
+    <main class="content">
+      <div style="width: 300px; height: 300px; ">
+        <h3>AUAACK Examination</h3>
+        <p class="clickable"onclick='changeI("Intro")'  style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Introduction </p>
+        <p type="text" onclick='changeT("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color:rgb(82, 220, 204);">Mission & Vision</p>
+
+        <p type="text" onclick='changeO("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);">Purpose </p>
+
+        <p type="text" onclick='changeD("Intro")' class="clickable" style="font-size: 15px; border-bottom: 2px dotted darkcyan; background-color: rgb(82, 220, 204);"> ORIC Projects</p>
+
+       
+      </div>
+
+      <div id="Introduction">
+        <h2 id="headingh">Welcome to the Office of Graduate Studies</h2>
+       <p style="width:auto">AUAAC Kamra Examination department is responsible for all matters concerning the conduct of examinations, marking, compilation and declaration of results and maintaining the record thereof in complete compliance of policies & procedures set by Air University Islamabad. Headed by Manager Academics & Examination, the examination department provides timely & secure services related to its domain. It believes in integrity, secrecy and quality services as its core values. The integrity of the examination process depends on everyone respecting the established rules and accepting their responsibilities in a consistent manner. Accordingly, various policies & procedures have been developed as per our requirements & available resources to establish a fair, appropriate and transparent examination system, free from corruption & malpractices, in line with the best practices.</p>
+  
+      </div>
+    </main>
+    <div style="text-align: center; width: auto;">
+      <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: darkcyan;">Department Photos</h2>
+      <div style="max-width: 1500px; background-color: linear-gradient(to right,#00093c, #2d0b00); padding: 10px; height: 200px; margin-left: 110px ; display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 20px; border-radius: 10px; margin-bottom: 20px; ">
+        <img src="images/uni.jpg" style="width: 300px; height: 170px; border-radius: 10px;" >
+        <img src="ani.gif" style="width: 300px; height: 170px ; border-radius: 10px;">
+        <img src="images/kamra campus.jpg"  style="width: 300px; height: 170px; border-radius: 10px;">
+        <img src="images/background.jpg"  style="width: 300px; height: 170px; border-radius: 10px;">
+        <img src="uni.jpg"  style="width: 300px; height: 170px; border-radius: 10px;">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023  Business Administration Department - University. All rights reserved.</p>
+    </footer>
+    <script>
+      function changeT(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Mission & Vision';
+        paragraph.innerHTML = '<span style="color:black;">Purpose <br> <br><span style="font-weight:bold;color:black;">To encourage research intensive culture among students and faculty in order to ensure knowledge-based economy.</span>';
+      }
+    </script>
+
+ <script>
+      function changeI(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        heading.textContent = 'Introduction';
+        paragraph.textContent = ' The Air University Kamra, Department of Business Administration (DBA)offers students a variety of specialization in Aviation Management, Finance, Marketing, Project Management and Human Resource Management.The curricula of the degree programs are fully aligned with the requirements of the accreditation bodies to comprise state-of-the-art courses that will prepare students for future challenges in computing and related fields. The department strives to maintain high standards through quality in teaching, learning, and research, with an emphasis on theoretical foundations, practical skills and cutting-edge applications of the subjects. To enhance and groom the soft skills of students, co-curricular and extra-curricular activities are planned and organized throughout the degree program. Our programs prepare students with a foundation in the major functional areas within business, such as accounting, economics, entrepreneurship, finance, information systems, international business, management, marketing and small business as well as Aviation Industry.';
+      }
+    </script>
+
+     <script>
+      function changeO(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+        const paragraph1 = divToChange.querySelector('p5');
+        const paragraphh2 = divToChange.querySelector('p3');
+        const paragraph3 = divToChange.querySelector('p4');
+        heading.textContent = 'Programs Offered';
+       paragraph.innerHTML = ' <span style="font-weight:bold;color:black;">Bachelor of Business Administration (BBA-Honors)</span><br> BBA (Hons) or Bachelor of Business Administration Honors is an Under-Graduate Business management academic degree course. Business Administration is the performance or management of business operations and thus the making or implementation of a major decision. Administration defines as the universal process of organizing people and resources efficiently to direct activities toward common goals and objectives. <br> <br> <span style="font-weight:bold;color:black;">Bachelor of Science Aviation Management (BS AviMgt).</span> <br>Aviation management course focuses on marketing management, aviation law, airline management, airline and airport management etc. The course aims to produce aviation management professionals who have stellar communication skills, interpersonal skills, excellent knowledge about air transport, airport operations, cabin crew training to ground staff and ticket management.Aviation management course imparts knowledge on the airport, business, airlines, and every aspect of the aviation industry. <br>Aerodynamics, aviation safety, aircraft systems, meteorology, airline management, and international aviation are other topics in aviation management. The course also prepares students for a variety of roles in the aviation industry. Business and managerial aspects of the aviation industry are primarily focused on this course.  ';
+
+    
+      }
+    </script>
+
+    <script>
+      function changeD(id) {
+        const divToChange = document.getElementById(id);
+        const heading = divToChange.querySelector('h2');
+        const paragraph = divToChange.querySelector('p');
+    
+        heading.textContent = 'Scope';
+       paragraph.innerHTML = 'Degrees of Management Sciences have a multidisciplinary atmosphere which focuses on innovative technologies to efficiently run different businesses. It uses a combination of analytical models and behavioral sciences to address societies’ most complex problems. <br> The scope of management science had been growing ever since the business world is expanding. All organizations and firms in the country and worldwide need a business manager or finance manager to manage the growth of their business in the most excellent, professional and ethical way. The best choice of every business firm for the business manager is Air University for its exceptional policies of teaching and offering the outside world the candidate who have all the knowledge to lead the business firms and make it out stand all the others.';
+
+    
+      }
+    </script>
+
+
+
+  </body>
+</html>
